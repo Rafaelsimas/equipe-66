@@ -8,12 +8,49 @@
     <title>BRTUBE</title>
 </head>
 <body>
-   <div class="login">
-    <img src="./assets/img/logo-br-removebg-preview.png" alt="">
-    <div class="acoes">
-        <a class="btn btn-login" href="#">Login</a>
-        <a class="btn btn-registro" href="#">Registre</a>
+    <div class="primeira-tela ">
+        <div class="opcoes-acesso">
+         <img src="./assets/img/logo-br-removebg-preview.png" alt="">
+         <div class="acoes">
+             <a onclick="login()" class="btn btn-login" href="#">Login</a>
+             <a onclick="registrarUsuario()" class="btn btn-registro" href="#">Registre</a>
+         </div>
+        </div>
     </div>
-   </div>
+
+    <div class="segunda-tela escondido">
+        <div class="login">
+            <img src="./assets/img/logo-br-removebg-preview.png" alt="">
+            <div class="box-login-usuario">
+                <input class="btn-login-pagina-login" placeholder="Login" type="text">
+                <input placeholder="Senha" type="text">
+                <button>Entrar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="terceira-tela escondido">
+        <div class="registro">
+            <div class="topo">
+                <div class="caixa">
+                    <div class="left-text">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/img/logo-br-removebg-preview.png" alt="">
+                </div>
+            </div>
+    
+            <div class="box-registro">
+                <h2>Registre-se</h2>
+                <input placeholder="jane@exemple.com" type="text">
+                <input placeholder="****************" type="password">
+                <button>Registrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/js/scripts.js"></script>
 </body>
 </html>
