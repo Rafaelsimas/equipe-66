@@ -16,6 +16,7 @@ a{
 :root{
     --border-green-color:#008B4F;
     --btn-color:white;
+    --dash-board-color-top:#0B3523;
 }
 
 body{
@@ -116,19 +117,19 @@ body{
 }
 
 /* =======================REGISTRO========================== */
-.topo{
+.registro .topo{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.topo .caixa{
+.registro .topo .caixa{
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.caixa img{
+.registro .caixa img{
     width: 100px;
     display: flex;
     justify-content: flex-end;
@@ -174,4 +175,94 @@ body{
     border: none;
     width: 100%;
     padding: 14px;
+}
+/* ===============================QUARTA-TELA==================== */
+
+
+.dash-board .topo{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    height: 134px;
+    background: var(--dash-board-color-top);
+}
+
+.dash-board .topo .caixa{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dash-board .caixa img{
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.usuario-logado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario-logado p{
+    color: var(--btn-color);
+    margin-top: 10px;
+}
+.dash-board .caixa ion-icon{
+    font-size: 40px;
+    color: var(--btn-color);
+}
+
+.dash-board .barra-tarefas{
+    position: fixed;
+    bottom: 0;
+    background: 
+    var(--dash-board-color-top);
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 9px;
+    gap: 20px;
+}
+
+.dash-board .barra-tarefas ion-icon{
+    font-size: 30px;
+}
+
+.funcionalidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+}
+
+.funcionalidades p{
+    margin-top: 7px;
+    color: var(--btn-color);
+}
+
+/* =======================AREA DE VISUALIZAÇÃO====== */
+
+.visualizacao{
+    height: 100vh;
+    margin-top: calc(-92px + 134px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--border-green-color);
+}
+
+.visualizacao p{
+    line-height: 30px;
 }
