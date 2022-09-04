@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 a{
@@ -265,4 +266,74 @@ body{
 
 .visualizacao p{
     line-height: 30px;
+}
+
+/* ================QUINTA TELA========== */
+
+.quinta-tela .visualizacao-quinta {
+    margin-top: 40%;
+    margin-bottom: 20%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.quinta-tela .visualizacao-quinta .campo-buca-geral{
+    
+    position: relative;
+}
+
+.quinta-tela .visualizacao-quinta .campo-buca-geral,input{
+    width: 100%;
+    padding: 10px;
+}
+.quinta-tela .visualizacao-quinta .campo-buca-geral ion-icon{
+    position: absolute;
+    right: 19px;
+    top: 15px;
+    font-size: 30px;
+}
+
+.compilado{
+   
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.compilado h4{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.compilado li{
+    margin-bottom: 20px;
+}
+
+.video-cam{
+    color: rgb(129, 129, 1);
+}
+
+.box-profissionais{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 13px;
+}
+.box-profissionais .profissionais-dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:50% ;
+}
+
+.box-profissionais .profissionais-dados ion-icon{
+    font-size: 40px;
+}
+
+.box-profissionais .profissionais-dados p{
+  font-size: 13px;
 }

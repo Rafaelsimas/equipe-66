@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>BRTUBE</title>
+    <title>PetroED</title>
 </head>
 <body>
-    <div class="primeira-tela escondido">
+    <div class="primeira-tela ">
         <div class="opcoes-acesso">
          <img src="./assets/img/logo-br-removebg-preview.png" alt="">
          <div class="acoes">
@@ -23,8 +23,8 @@
             <img src="./assets/img/logo-br-removebg-preview.png" alt="">
             <div class="box-login-usuario">
                 <input class="btn-login-pagina-login" placeholder="Login" type="text">
-                <input placeholder="Senha" type="text">
-                <button>Entrar</button>
+                <input class="input-campo-usuario" placeholder="Senha" type="password">
+                <button onclick="entrar()">Entrar</button>
             </div>
         </div>
     </div>
@@ -49,13 +49,13 @@
         </div>
     </div>
 
-    <div class="quarta-tela">
+    <div class="quarta-tela escondido">
         <div class="dash-board">
          <div class="topo">
              <div class="caixa">
                  <div class="usuario-logado">
                      <ion-icon name="person-circle-outline"></ion-icon>
-                     <p>Olá, <strong>Jane</strong></p>
+                     <p>Olá, <strong id="user">Jane</strong></p>
                      
                  </div>
                  <img src="./assets/img/logo-br-removebg-preview.png" alt="">
@@ -68,6 +68,100 @@
       para todos os assuntos relacionados às atividades Petrobras, agilizando o processo de obterção das informações que realmente são necessárias em seu trabalho.
      Através duma simples busca você encontrará vídeos, instruções sobre procedimentos e contará contato direto com profissionais especializados.
              </p>
+         </div>
+         <div class="barra-tarefas">
+             <div class="funcionalidades">
+                 <ion-icon name="home-outline"></ion-icon>
+                 <p>
+     
+                     Home
+                 </p>
+             </div>
+     
+             <div class="funcionalidades">
+                 <ion-icon name="person-outline"></ion-icon>
+                 <p>
+     
+                     Perfil
+                 </p>
+             </div>
+     
+             <div class="funcionalidades">
+                 <ion-icon name="search-outline"></ion-icon>
+                 <p>
+     
+                     Buscar
+                 </p>
+             </div>
+     
+             <div class="funcionalidades">
+                 <ion-icon name="cog-outline"></ion-icon>
+                 <p>
+     
+                     config
+                 </p>
+             </div>
+         </div>
+        </div>
+    </div>
+
+    <div class="quinta-tela escondido">
+        <div class="dash-board">
+         <div class="topo">
+             <div class="caixa">
+                 <div class="usuario-logado">
+                     <ion-icon name="person-circle-outline"></ion-icon>
+                     <p>Olá, <strong>Jane</strong></p>
+                     
+                 </div>
+                 <img src="./assets/img/logo-br-removebg-preview.png" alt="">
+             </div>
+         </div>
+         <div class="visualizacao-quinta">
+             <div class="campo-buca-geral">
+                <ion-icon name="search-outline"></ion-icon>
+                <input type="text">
+             </div>
+
+             <div class="compilado">
+                 
+                 <h4>Vídeos</h4>
+                 <li>
+                    <ion-icon class="video-cam" name="videocam"></ion-icon>
+                    Utilização de Graxa em tubulação
+                 </li>
+                 <li>
+                    <ion-icon name="documents"></ion-icon>
+                    Utilização de Graxa em tubulação
+                 </li>
+                 <li>
+                    <ion-icon name="documents"></ion-icon>
+                    Utilização de Graxa em tubulação
+                 </li>
+                 <li>
+                    <ion-icon class="video-cam" name="videocam"></ion-icon>
+                    Utilização de Graxa em tubulação
+                 </li>
+                 <h4>Profissionais</h4>
+                 <div class="box-profissionais">
+                    <div class="profissionais-dados">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <p><strong>Rodrigo Silva</strong></p>
+                        <p>Eletricista</p>
+                    </div>
+                    <div class="profissionais-dados">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <p><strong>Rodrigo Silva</strong></p>
+                        <p>Eletricista</p>
+                    </div>
+                    <div class="profissionais-dados">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <p><strong>Rodrigo Silva</strong></p>
+                        <p>Eletricista</p>
+                    </div>
+                    
+                 </div>
+             </div>
          </div>
          <div class="barra-tarefas">
              <div class="funcionalidades">
