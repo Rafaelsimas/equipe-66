@@ -271,9 +271,9 @@ body{
 /* ================QUINTA TELA========== */
 
 .quinta-tela .visualizacao-quinta {
-    margin-top: 40%;
+    margin-top: 31%;
     margin-bottom: 20%;
-    height: 100vh;
+    height: 71vh;
     overflow: scroll;
 }
 

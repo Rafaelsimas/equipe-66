@@ -13,7 +13,7 @@
          <img src="./assets/img/logo-br-removebg-preview.png" alt="">
          <div class="acoes">
              <a onclick="login()" class="btn btn-login" href="#">Login</a>
-             <a onclick="registrarUsuario()" class="btn btn-registro" href="#">Registre</a>
+             <a  class="btn btn-registro" href="#">Registre</a>
          </div>
         </div>
     </div>
@@ -22,19 +22,20 @@
         <div class="login">
             <img src="./assets/img/logo-br-removebg-preview.png" alt="">
             <div class="box-login-usuario">
-                <input class="btn-login-pagina-login" placeholder="Login" type="text">
+                <input id="inputLogin" class="btn-login-pagina-login" placeholder="Login" type="text">
                 <input class="input-campo-usuario" placeholder="Senha" type="password">
-                <button onclick="entrar()">Entrar</button>
+                <button class="btn-login-usuario">Entrar</button>
             </div>
         </div>
     </div>
 
+    <!-- REGISTRO -->
     <div class="terceira-tela escondido">
         <div class="registro">
             <div class="topo">
                 <div class="caixa">
                     <div class="left-text">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        <ion-icon <!-- onclick="voltarHome()" --> name="arrow-back-outline"></ion-icon>
                     </div>
                     <img src="./assets/img/logo-br-removebg-preview.png" alt="">
                 </div>
@@ -42,9 +43,12 @@
     
             <div class="box-registro">
                 <h2>Registre-se</h2>
-                <input placeholder="jane@exemple.com" type="text">
-                <input placeholder="****************" type="password">
-                <button>Registrar</button>
+                <input id="emailRegistrado" placeholder="jane@exemple.com" type="text">
+                <input id="senhaRegistrada" placeholder="****************" type="password">
+                <button onclick="registrar()">Registrar</button>
+                <div class="voltarPHome">
+                    
+                </div>
             </div>
         </div>
     </div>
@@ -87,7 +91,7 @@
              </div>
      
              <div class="funcionalidades">
-                 <ion-icon name="search-outline"></ion-icon>
+                 <ion-icon onclick="buscar()" name="search-outline"></ion-icon>
                  <p>
      
                      Buscar
@@ -146,12 +150,12 @@
                  <div class="box-profissionais">
                     <div class="profissionais-dados">
                         <ion-icon name="person-circle-outline"></ion-icon>
-                        <p><strong>Rodrigo Silva</strong></p>
+                        <p><strong>Pedro sorano</strong></p>
                         <p>Eletricista</p>
                     </div>
                     <div class="profissionais-dados">
                         <ion-icon name="person-circle-outline"></ion-icon>
-                        <p><strong>Rodrigo Silva</strong></p>
+                        <p><strong>Anderson Bastos</strong></p>
                         <p>Eletricista</p>
                     </div>
                     <div class="profissionais-dados">
@@ -165,7 +169,7 @@
          </div>
          <div class="barra-tarefas">
              <div class="funcionalidades">
-                 <ion-icon name="home-outline"></ion-icon>
+                 <ion-icon onclick="alert('Em breve daremos suporte a essa funcionalidade')" name="home-outline"></ion-icon>
                  <p>
      
                      Home
@@ -173,7 +177,7 @@
              </div>
      
              <div class="funcionalidades">
-                 <ion-icon name="person-outline"></ion-icon>
+                 <ion-icon  onclick="alert('Em breve daremos suporte a essa funcionalidade')" name="person-outline"></ion-icon>
                  <p>
      
                      Perfil
@@ -189,7 +193,7 @@
              </div>
      
              <div class="funcionalidades">
-                 <ion-icon name="cog-outline"></ion-icon>
+                 <ion-icon  onclick="alert('Em breve daremos suporte a essa funcionalidade')" name="cog-outline"></ion-icon>
                  <p>
      
                      config
@@ -202,5 +206,6 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="./assets/js/scripts.js"></script>
+<script src="./assets/js/funcionalidades.js"></script>
 </body>
 </html>
